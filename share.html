@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Quotes - InspireHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <header class="top-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" placeholder="Search quotes, authors, categories...">
+        </div>
+        <div class="header-actions">
+          <a href="notifications.html" class="icon-btn notifications-btn">🔔<span class="badge-dot"></span></a>
+          <a href="favorites.html" class="icon-btn">❤️</a>
+          <a href="settings.html" class="icon-btn">⚙️</a>
+        </div>
+      </header>
+      <div class="page-container">
+        <div class="page-header reveal">
+          <h1 class="page-title">📤 Share Quotes</h1>
+          <p class="page-subtitle">Share inspiration across social platforms</p>
+        </div>
+        <div class="daily-quote-card reveal mb-3">
+          <p class="quote-text">"The only way to do great work is to love what you do."</p>
+          <p class="quote-author">— Steve Jobs</p>
+        </div>
+        <div class="flex flex-wrap gap-1 mb-3">
+          <button class="btn btn-primary" id="share-copy-btn">📋 Copy Quote</button>
+          <button class="btn btn-secondary" onclick="showToast('Image downloaded (demo)', '🖼️')">⬇️ Download Image</button>
+        </div>
+        <h2 class="section-title mb-2 reveal">Social Previews</h2>
+        <div class="share-previews reveal">
+          <div class="share-preview-card instagram">
+            <p style="font-size:1.25rem;font-weight:600">"The only way to do great work is to love what you do."</p>
+            <p style="margin-top:1rem;opacity:0.9">— Steve Jobs</p>
+            <p style="margin-top:auto;font-size:0.8rem;opacity:0.7">InspireHub</p>
+          </div>
+          <div class="share-preview-card twitter">
+            <p>"The only way to do great work is to love what you do."</p>
+            <p class="text-muted mt-2">— Steve Jobs · InspireHub</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/quotes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Settings - InspireHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <header class="top-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" placeholder="Search quotes, authors, categories...">
+        </div>
+        <div class="header-actions">
+          <a href="notifications.html" class="icon-btn notifications-btn">🔔<span class="badge-dot"></span></a>
+          <a href="favorites.html" class="icon-btn">❤️</a>
+          <a href="settings.html" class="icon-btn">⚙️</a>
+        </div>
+      </header>
+      <div class="page-container">
+        <div class="page-header reveal">
+          <h1 class="page-title">⚙️ Theme Settings</h1>
+          <p class="page-subtitle">Customize your InspireHub experience</p>
+        </div>
+        <div class="glass-card reveal mb-3">
+          <h3 class="mb-2">🎨 Color Theme</h3>
+          <div class="grid-3">
+            <button class="glass-card" data-theme-option="default" style="padding:1.5rem;cursor:pointer"><div style="width:100%;height:40px;background:linear-gradient(135deg,#7C3AED,#06B6D4);border-radius:8px;margin-bottom:0.5rem"></div>Default</button>
+            <button class="glass-card" data-theme-option="ocean" style="padding:1.5rem;cursor:pointer"><div style="width:100%;height:40px;background:linear-gradient(135deg,#0EA5E9,#14B8A6);border-radius:8px;margin-bottom:0.5rem"></div>Ocean</button>
+            <button class="glass-card" data-theme-option="sunset" style="padding:1.5rem;cursor:pointer"><div style="width:100%;height:40px;background:linear-gradient(135deg,#F43F5E,#FB923C);border-radius:8px;margin-bottom:0.5rem"></div>Sunset</button>
+            <button class="glass-card" data-theme-option="forest" style="padding:1.5rem;cursor:pointer"><div style="width:100%;height:40px;background:linear-gradient(135deg,#10B981,#84CC16);border-radius:8px;margin-bottom:0.5rem"></div>Forest</button>
+            <button class="glass-card" data-theme-option="midnight" style="padding:1.5rem;cursor:pointer"><div style="width:100%;height:40px;background:linear-gradient(135deg,#6366F1,#8B5CF6);border-radius:8px;margin-bottom:0.5rem"></div>Midnight</button>
+            <button class="glass-card" data-theme-option="light" style="padding:1.5rem;cursor:pointer"><div style="width:100%;height:40px;background:linear-gradient(135deg,#F1F5F9,#E2E8F0);border-radius:8px;margin-bottom:0.5rem"></div>Light</button>
+          </div>
+        </div>
+        <div class="glass-card reveal mb-3">
+          <h3 class="mb-2">🔔 Notification Preferences</h3>
+          <label class="flex items-center gap-1 mb-2"><input type="checkbox" checked> Daily quote reminders</label>
+          <label class="flex items-center gap-1 mb-2"><input type="checkbox" checked> Streak notifications</label>
+          <label class="flex items-center gap-1"><input type="checkbox"> Community updates</label>
+        </div>
+        <div class="glass-card reveal mb-3">
+          <h3 class="mb-2">🌐 Language</h3>
+          <select class="form-select"><option>English</option><option>Spanish</option><option>French</option><option>German</option><option>Japanese</option></select>
+        </div>
+        <div class="glass-card reveal mb-3">
+          <h3 class="mb-2">🎤 Voice Search</h3>
+          <p class="text-muted mb-2" style="font-size:0.9rem">Search quotes using your voice (UI demo)</p>
+          <button class="btn btn-accent" onclick="showToast('Listening... (demo)','🎤')">🎤 Start Voice Search</button>
+        </div>
+        <div class="glass-card reveal">
+          <h3 class="mb-2">📴 Offline Mode</h3>
+          <p class="text-muted mb-2" style="font-size:0.9rem">Cache quotes for offline reading</p>
+          <label class="flex items-center gap-1"><input type="checkbox" id="offline-toggle" onchange="showToast(this.checked?'Offline mode enabled':'Offline mode disabled','📴')"> Enable offline quote cache</label>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/quotes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

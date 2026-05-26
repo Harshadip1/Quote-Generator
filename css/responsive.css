@@ -1,0 +1,122 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .wallpaper-editor { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay.active {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .top-header {
+    padding: 0 1rem;
+  }
+
+  .search-bar {
+    max-width: none;
+  }
+
+  .page-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta .btn { width: 100%; }
+
+  .quotes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .daily-quote-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .header-actions .icon-btn:not(.notifications-btn) {
+    display: none;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .share-previews {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-cards { height: 150px; }
+  .floating-card { font-size: 0.75rem; max-width: 150px; }
+
+  .timer-display { font-size: 2.5rem; }
+
+  .page-title { font-size: 1.5rem; }
+
+  .tabs { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 0.5rem; }
+}
+
+@media (max-width: 480px) {
+  .categories-grid,
+  .mood-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value { font-size: 2rem; }
+
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .bar-chart { height: 150px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

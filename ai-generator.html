@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Quote Generator - InspireHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <header class="top-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" placeholder="Search quotes, authors, categories...">
+        </div>
+        <div class="header-actions">
+          <a href="notifications.html" class="icon-btn notifications-btn">🔔<span class="badge-dot"></span></a>
+          <a href="favorites.html" class="icon-btn">❤️</a>
+          <a href="settings.html" class="icon-btn">⚙️</a>
+        </div>
+      </header>
+      <div class="page-container">
+        <div class="page-header reveal">
+          <h1 class="page-title">🤖 AI Quote Generator</h1>
+          <p class="page-subtitle">Generate personalized quotes with AI (UI demo)</p>
+        </div>
+        <div class="ai-prompt-box reveal">
+          <div class="form-group">
+            <label class="form-label">Describe what inspiration you need</label>
+            <input class="form-input" id="ai-prompt" type="text" placeholder="e.g. motivation for morning workout">
+          </div>
+          <button class="btn btn-primary btn-lg" id="ai-generate-btn">✨ Generate Quote</button>
+        </div>
+        <div class="glass-card reveal mb-3" id="ai-output">
+          <p class="text-muted text-center">Your AI-generated quote will appear here</p>
+        </div>
+        <h2 class="section-title mb-2 reveal">Recent Generations</h2>
+        <div class="ai-cards" id="ai-cards">
+          <div class="ai-card"><p>"Your potential is limitless when you choose courage over comfort."</p><small class="text-muted">2 min ago</small></div>
+          <div class="ai-card"><p>"Every setback is a setup for a greater comeback."</p><small class="text-muted">15 min ago</small></div>
+          <div class="ai-card"><p>"Transform your wounds into wisdom."</p><small class="text-muted">1 hour ago</small></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/quotes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

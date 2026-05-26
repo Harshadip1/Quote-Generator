@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard - InspireHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <header class="top-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" placeholder="Search quotes, authors, categories...">
+        </div>
+        <div class="header-actions">
+          <a href="notifications.html" class="icon-btn notifications-btn">🔔<span class="badge-dot"></span></a>
+          <a href="favorites.html" class="icon-btn">❤️</a>
+          <a href="settings.html" class="icon-btn">⚙️</a>
+        </div>
+      </header>
+      <div class="page-container">
+        <div class="page-header reveal">
+          <h1 class="page-title">📊 Analytics Dashboard</h1>
+          <p class="page-subtitle">Track your inspiration journey and reading habits</p>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card"><div class="stat-value" id="stat-favorites">0</div><div class="stat-label">Favorites</div></div>
+          <div class="stat-card"><div class="stat-value" id="stat-streak">0</div><div class="stat-label">Day Streak</div></div>
+          <div class="stat-card"><div class="stat-value" id="stat-read">0</div><div class="stat-label">Quotes Read</div></div>
+          <div class="stat-card"><div class="stat-value" id="stat-collections">0</div><div class="stat-label">Collections</div></div>
+        </div>
+        <div class="grid-2 reveal">
+          <div class="chart-container"><h3 class="chart-title">📂 Favorite Categories</h3><div id="category-chart"></div></div>
+          <div class="chart-container"><h3 class="chart-title">🎭 Mood Analytics</h3><div id="mood-chart"></div></div>
+        </div>
+        <div class="chart-container reveal"><h3 class="chart-title">📈 Weekly Activity</h3><div id="activity-chart"></div></div>
+        <h2 class="section-title mt-3 mb-2 reveal">🎯 Goals Progress</h2>
+        <div class="grid-2" id="progress-widgets"></div>
+      </div>
+    </main>
+  </div>
+  <script src="js/quotes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/analytics.js"></script>
+</body>
+</html>

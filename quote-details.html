@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Details - InspireHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main-content">
+      <header class="top-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" placeholder="Search quotes, authors, categories...">
+        </div>
+        <div class="header-actions">
+          <a href="notifications.html" class="icon-btn notifications-btn">🔔<span class="badge-dot"></span></a>
+          <a href="favorites.html" class="icon-btn">❤️</a>
+          <a href="settings.html" class="icon-btn">⚙️</a>
+        </div>
+      </header>
+      <div class="page-container">
+        <div class="daily-quote-card reveal">
+          <p class="quote-text" id="detail-quote-text"></p>
+          <p class="quote-author" id="detail-quote-author"></p>
+          <div class="quote-tags" id="detail-quote-tags"></div>
+          <p class="text-muted mt-2">❤️ <span id="detail-likes">0</span> likes</p>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2" style="justify-content:center">
+          <button class="btn btn-primary" id="detail-fav-btn">❤️ Favorite</button>
+          <button class="btn btn-secondary" id="detail-share-btn">📤 Share</button>
+          <a href="wallpapers.html" class="btn btn-accent">🖼️ Wallpaper</a>
+        </div>
+        <section class="mt-3">
+          <h2 class="section-title mb-2">Related Quotes</h2>
+          <div class="quotes-grid" id="related-quotes"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="js/quotes.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
